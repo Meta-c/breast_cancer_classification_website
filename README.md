@@ -24,4 +24,4 @@ To run this project locally, follow these steps:
 1. Clone this repository to your local machine using the following command:
 
    ```bash
-   git clone https://github.com/username/repository.git
+   git clone https://github.com/Meta-c/breast_cancer_classification_website.git
