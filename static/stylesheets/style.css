@@ -1,0 +1,546 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding:
+    var(--scroll-padding, 5rem)
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  /* background-color: #fff;
+  border-radius: 30px;*/
+}
+.logo {
+  padding-top: 7%;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.nav:hover {
+  color: #fff;
+}
+nav {
+  flex: 1;
+  text-align: right;
+}
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20 px;
+  margin-left: 20px;
+}
+.home {
+  border-radius: 30px;
+  padding: 8px 30px;
+  margin: 30px 0;
+  background-color: orangered;
+  color: aliceblue;
+}
+.home:hover {
+  background: #555;
+}
+.cart {
+  margin: 20px 15px;
+}
+
+.cart:hover {
+  color: #ff523b;
+}
+a {
+  text-decoration: none;
+  color: #555;
+}
+p {
+  color: #555;
+}
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.col-2 {
+  flex-basis: 50%;
+  min-width: 300px;
+}
+.col-2 img {
+  max-width: 120%;
+  padding: 100px 0;
+}
+.col-2 h1 {
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0;
+}
+
+.btn {
+  display: inline-block;
+  background: #ff523b;
+  color: #fff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  height: 50px;
+  font-size: 25px;
+  border-radius: 30px;
+  transition: background 0.5ms;
+}
+.header {
+  background: #E2D6CF;
+}
+.header .row {
+  margin-top: 70px;
+}
+.btn:hover {
+  background: #555;
+}
+.Methodology {
+  /* margin: 50px 0; */
+  background: #E30B5C;
+}
+
+.title_method{
+  text-align: center;
+  margin: 0 auto 70px;
+  position: relative;
+  font-size: 40px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 30px;
+  padding-top: 60px;
+  color: aliceblue;
+}
+
+.title_method::after {
+  content: "";
+  background: #ff523b;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.col-prop p{
+color:#8a8a8a;
+text-align: center;
+font-size: 14px;
+font: weight 1px;
+padding-bottom: 40%;
+}
+
+.col-prop h4{
+  text-align: center;
+  color: aliceblue;
+  font-size: 30px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+
+
+.demo{
+  background-color:#E2D6CF;
+}
+
+.demo-container h2{
+color:#000;
+ }
+
+
+/* .col-placeholder {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+} */
+
+.preview-container {
+  max-width: 100%; /* Ensure the container doesn't exceed its parent's width */
+  max-height: 100%; /* Ensure the container doesn't exceed its parent's height */
+  overflow:scroll; /* Hide any content that exceeds the container's dimensions */
+}
+
+.preview-image {
+  max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+  max-height: 100%; /* Ensure the image doesn't exceed its container's height */
+  display: block; /* Ensure the image behaves like a block element */
+  margin: auto; /* Center the image horizontally */
+}
+
+ .preview-container {
+  width: 900px; /* Adjust the width value to make the container wider */
+  height: 700px; /* Adjust the height value to make the container taller */
+  margin: auto;
+  text-align: center;
+  transform: translateY(-6%);
+  /* padding: 25px; */
+  border-radius: 20px; 
+  background-color: #cccccc;/* Adjust the border-radius value to make the container more or less rounded */
+}
+
+.upload-icon{
+  width: 40px;
+  height: auto;
+}
+
+/* Hide default file input text */
+input[type="file"] {
+  display: none;
+}
+
+/* Style for custom file upload text */
+.custom-file-upload {
+  display: inline-block;
+  width: 300px;
+  height: auto;
+  padding: 20px 12px;
+  font-size: 30px;
+  text-align: center;
+  background-color: #ff523b;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.btn-pred{
+  display: none;
+  width: 200px;
+  height: auto;
+  font-weight: bold;
+  padding:20px 15px;
+  margin-top:10px ;
+  padding-left: 10px;
+  font-size: 25px;
+  text-align: center;
+  background-color: #ff523b;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.btn-pred:hover {
+  background-color: #8a8a8a;
+}
+
+/* Style for custom file upload text when hovering */
+.custom-file-upload:hover {
+  background-color: #8a8a8a;
+}
+
+.col-upload h1{
+  padding-bottom: 10px;
+  font-size: 60px;
+  transform: translateY(-40%);
+}
+
+.col-upload p{
+  transform: translateY(-40%);
+  font-size: 40;
+  padding-bottom: 30px;
+}
+
+.btn-upload{
+  display: inline-block;
+  background: #ff523b;
+  color: #fff;
+  width: 1000px;
+  height: auto;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: background 0.5ms;
+}
+
+.btn-upload:hover {
+  background: #555;
+}
+
+
+.col-3 {
+  flex-basis: 30%;
+  min-width: 250px;
+  margin-bottom: 30px;
+}
+.col-3 img {
+  width: 100%;
+}
+.col-4 {
+  flex-basis: 50%;
+  padding-left: 100px;
+  min-width: 100px;
+  width: 500px;
+  margin-bottom: 10px;
+  transition: transform 0.5s;
+}
+.col-4 img {
+  width: 100%;
+}
+
+.col-team{
+  flex-basis: 20%;
+  padding-left: 100px;
+  min-width: 100px;
+  width: 200px;
+  height: auto;
+  overflow: hidden;
+  display:inline-block;
+  vertical-align:middle;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+.col-team img{
+width: 100%;
+height: auto;
+margin-bottom:30px ;
+border-radius: 20px;
+}
+
+.col-team h4{
+font-size: 25px;
+}
+
+.col-team p{
+  color: aliceblue;
+  margin-bottom: 20px;
+}
+
+#pred-box {
+  display: block; /* Change to block for full width */
+  margin-top: 10px;
+  background: #E30B5C ;
+  color: #fff;
+  width: 300px;
+  height: auto;
+  border-radius: 30px;
+  transition: background 0.5s;
+}
+
+#head-result{
+  /* display: inline-block; */
+  text-align: center;
+  margin-top: 15%;
+  margin-bottom: 15%;
+  padding: 15px 12px;
+  font-size: 30px;
+}
+
+#result{
+  text-align: center;
+  padding: 15px 12px;
+  padding-top: 20px;
+  margin: auto;
+  font-size: 40px;
+  color: aliceblue;
+}
+
+.text-pred{
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: aliceblue;
+
+}
+.small-container {
+  max-width: 1800px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.title {
+  text-align: center;
+  margin: 0 auto 80px;
+  position: relative;
+  line-height: 60px;
+  color: black;
+}
+
+.title::after {
+  content: "";
+  background: #ff523b;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+h4 {
+  color: black;
+  font-weight: normal;
+}
+.col-4 p {
+  font-size: 14px;
+}
+
+.col-4:hover {
+  transform: translateY(-5px);
+}
+/*--------Promotion--------*/
+
+.promo {
+  background: radial-gradient(rgb(252, 252, 252), rgba(230, 9, 9, 0.541));
+  margin-top: 80px;
+  padding: 30px 0;
+}
+.col-2 .promo-img {
+  padding: 50px;
+  transform: translateY(-50%);
+}
+small {
+  color: #555;
+}
+
+.col-2.btn {
+  border-radius: 200px;
+  margin: 40px 100px 100px 100px;
+}
+
+
+
+/* ---------- Loading --------*/
+
+/* Style for the loading modal */
+.loading-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9); /* white background with opacity */
+  overflow: hidden;
+  text-align: center;
+  border-radius: 10px; /* rounded corners */
+}
+
+/* Style for the loading content */
+.loading-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+/* Style for the loading GIF */
+.loading-content img {
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+}
+
+/* Style for the loading text */
+.loading-content p {
+  margin-top: 10px; /* Adjust spacing as needed */
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+/* Apply blur effect to the background when the loading modal is shown */
+.blur {
+  filter: blur(5px); /* Adjust the blur strength as needed */
+}
+
+/*--------------Brands---------*/
+
+.brands {
+  margin: 100px auto;
+}
+.col-3 {
+  width: 160px;
+}
+.col-3 img {
+  width: 100%;
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+
+.col-3 img:hover {
+  filter: grayscale(0);
+}
+
+/*--------footer----------*/
+.footer {
+  background: #fff;
+  color: #8a8a8a;
+  font-size: 14px;
+  padding: 60px 0 20px;
+}
+.footer p {
+  color: #8a8a8a;
+}
+.footer h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+  min-width: 0px;
+  margin-bottom: 10px;
+}
+.footer-col-1 {
+  flex: basis 10%;
+}
+.footer-col-2 {
+  flex: 3;
+  text-align: center;
+}
+.footer-col-2 img {
+  width: 180px;
+  margin-bottom: 30px;
+}
+.footer-col-3,
+.footer-col-4 {
+  flex-basis: 12%;
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+}
+.app-logo {
+  margin-top: 20%;
+}
+
+.app-logo {
+  width: 200px;
+}
+
+.footer hr {
+  border: none;
+  background: #b5b5b5;
+  height: 1px;
+  margin: 20px 0;
+}
+.copyright {
+  text-align: center;
+}
+
+.social:hover {
+  color: #fff;
+}

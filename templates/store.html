@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Breast Cancer Classification</title>
+    <link rel="icon" href="/static/images_cancer/canc.png" type="image/icon type">
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/style.css') }}" />
+    <script src="/static/scripts/script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Lora:wght@500&family=Playfair+Display:ital@1&family=Roboto+Condensed:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+          scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Loading modal -->
+    <div id="loading-modal" class="loading-modal">
+      <div class="loading-content">
+          <img src="/static/images_cancer/icons8-analyze.gif" width="100px" height="auto" alt="Loading GIF">
+          <p>Verifying Image...</p>
+      </div>
+    </div>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img src="/static/images_cancer/must.png" width="170px" border-radius="20px" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <h1>Breast Cancer Classification<br />UltraSound</h1>
+            <p>
+              The results should not be taken in consedration<br />
+              Only a Doctor can confirm the case
+            </p>
+            <a href="#demo" class="btn">Get Started &#8594;</a>
+          </div>
+          <div class="col-2">
+            <img
+              src="/static/images_cancer/canc.png"
+              width="325px"
+              height="auto"
+              alt="cancer_logo"
+              style="margin-left: 300px;"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----- featured categories ----->
+
+    <div class="Methodology">
+      <h2 class="title_method">How it works</h2>
+      <div class="row">
+        <div class="col-prop">
+          <img src="/static/images_cancer/image-.png" width="290px"
+          height="auto" alt="" />
+          <h4>Upload File</h4>
+          <p>User Uploads the file of his ultrasound scan </p>
+        </div>
+        <div class="col-prop">
+          <img src="/static/images_cancer/detection.png" width="290px"
+          height="auto" alt="" />
+          <h4>File Verification</h4>
+          <p>A deep learning model verifies if the uploaded file <br /> is UltraSound</p>
+        </div>
+        <div class="col-prop">
+          <img src="/static/images_cancer/electronic.png" width="290px"
+          height="auto" alt="" />
+          <h4>Prediction</h4>
+          <p>Fine tuned YoloV8 model classifies the uploaded scan</p>
+        </div>
+      
+    </div>
+
+    
+
+      
+    <!--------------promotions----------------->
+
+    <div class="demo" id="demo">
+      <div class="demo-container">
+        <h2 class="title_method">Try it</h2>
+        <div class="row">
+          <div class="col-upload">
+            <h1>Test on your own scan</h1>
+            <p>You can try our Free Breast Cancer classifier <br /> Take in consederation that the result should not be taken seriously </p>
+            <form id="upload-form" method="post" enctype="multipart/form-data">
+              <!-- Upload button -->
+              <label for="upload" class="upload-label"> 
+                <input title="Upload Your Scan" type="file" id="upload" name="imagefile" class="btn-upload" accept="image/*" onchange="previewImage(event)" />
+                <span class="custom-file-upload">Upload your scan</span>
+              </label>
+              
+              <!-- Predict button -->
+              
+              <button type="button" id="predict-button" class="btn-pred" value="Predict"  onclick="predictImage()" >Predict</button>
+              
+            </form> 
+            <div id="pred-box">
+            </div>        
+          </div>
+          <div class="col-4">
+            <div class="preview-container">
+              <img src="upload_10324656.png" class="preview-image" alt="" />
+            </div>    
+          </div>
+        </div>
+      </div>
+    </div>
+
+           <!--------------Team--------------------->
+
+    <h2 class="title_method">Our Team</h2>
+      <div class="row">
+        <div class="col-team">
+          <img src="/static/images_cancer/me_image.jpg" alt="" />
+          <h4>Ahmed Medhat</h4>
+          <p>ahmedmedhat10122@gmail.com</p>
+        </div>
+        <div class="col-team">
+          <img src="/static/images_cancer/tayeb_img.jpg" alt="" />
+          <h4>Khalid Ahmed</h4>
+          <p>kh0234568@gmail.com</p>
+        </div>
+        <div class="col-team">
+          <img src="/static/images_cancer/mohammed_omar.png" alt="" />
+          <h4>Mohammed Omar</h4>
+          <p>M7md.omar.m7md.1999@gmail.com</p>
+        </div>
+        <div class="col-team">
+          <img src="/static/images_cancer/omar.jpg" alt="" />
+          <h4>Omar Ahmed</h4>
+          <p>omarahmed2002@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    
+  
+                                    <!-------------Footer-------------------->
+
+
+
+
+
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          </div>
+          <div class="footer-col-2">
+            <img src="/static/images_cancer/must.png" style="padding-left: 0px" alt="" />
+            <p style="text-align: center;">
+              Our Pipeline is designed to be in State Of the Art using advanced tools to do so
+            </p>
+          </div>
+        </div>
+        <hr /><p><div class="copyright">Copyright 2024 - Must University</div></p>
+      </div>
+    </div>
+  </body>
+</html>
