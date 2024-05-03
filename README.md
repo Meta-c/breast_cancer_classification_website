@@ -10,9 +10,9 @@ This website is designed for the classification of breast ultrasound scans. It u
 
 ## Features
 
-    Upload breast ultrasound scan images for classification.
-    Predict whether the ultrasound scan is benign or malignant.
-    High accuracy classification based on state-of-the-art deep learning models.
+- Upload breast ultrasound scan images for classification.
+- predict whether the ultrasound scan is benign or malignant.
+- High accuracy classification based on state-of-the-art deep learning models.
 
     
 ![Screenshot 2024-05-03 232056](https://github.com/Meta-c/breast_cancer_classification_website/assets/89762132/0a9e158a-ced5-44c3-9492-7b1b7184cd40)
