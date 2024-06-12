@@ -1,2 +1,9 @@
 best.pt
 breast_ultrasound_detector.h5
+transformers_test.ipynb
+distil_whisper_large_ama/
+verify_models/
+static/images_test/
+test_samples/
+app.py
+recorded_audio.wav
